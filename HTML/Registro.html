@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registro  </title>
+    <link rel="stylesheet" href="../CSS/Registro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20d64e440e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+    
+  <nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="#"> <img class="logo" src="../IMG/Logo blanco.png" alt=""> </a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+            <li class="nav-item">
+                <a class="nav-link"  href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>_ciudadanxs</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link"  href="javascript:void(0);"><i class="far fa-address-book"></i>_holdup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>_organizaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>_emprendedores </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>_impacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>_contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>_equipo</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <form class="my-form">
+        <div class="container">
+          <h2>Queremos conocerte un poco!</h2>
+          <ul>
+            <li>
+ 
+
+              <div class="wrapper">
+                <div class="box">
+                  <div class="js--image-preview"></div>
+                  <div class="upload-options">
+                    <label>
+                      <input type="file" class="image-upload" accept="image/*" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+              
+              <select>
+                <option >-- Selecione un Tema --</option>
+                <option>Accion Climatica</option>
+                <option>Transformacion social</option>
+                <option>Comunidad e Innovacion</option>
+                <option>Tejido Social</option>
+                <option>Reduccion de Desigualdade<option> 
+              </select>
+            </li>
+            <li>
+              <div class="grid grid-2">
+                <input type="text" placeholder="Nombre del Responsable" required>  
+                <input type="text" placeholder="Apellido del Responsable" required>
+              </div>
+            </li>
+            <li>
+              <div class="grid grid-2">
+                <input type="email" placeholder="Email" required>  
+                <input type="Telefono" placeholder="Nombre Del Emprendimiento">
+              </div>
+            </li>    
+            <li>
+              <textarea placeholder="Cuentenos un poco sobre tu Empredimento"></textarea>
+            </li>   
+            <li>
+              <input type="checkbox" id="terms">
+              <label for="terms">¿Te gustaria recibir un taller en vivo que facilite un voluntario para resolver tu reto?</label>
+            </li>  
+            <li>
+              <div class="grid grid-3">
+                
+                <button class="btn-grid" type="submit" disabled>
+                  <span class="back">
+                   
+                  <span class="front">Registrar</span>
+                </button>
+                <button class="btn-grid" type="reset" disabled>
+                  <span class="back">
+                    
+                  </span>
+                  <span class="front">Limpiar</span>
+                </button> 
+              </div>
+            </li>    
+          </ul>
+        </div>
+      </form>
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <IMG SRC="../img/Logo blanco.png" ALT="" WIDTH=300 HEIGHT=50>
+          <p class="footer-links">
+            <a href="#">_ciudadanxs</a>
+            <a href="#">_holdup</a>
+            <a href="#">_organizaciones</a>  <br>
+            <a href="#">_emprendedores</a>
+            <a href="#">_impacto</a>
+            <a href="#">_contacto</a>
+            <a href="#">_equipo</a>
+          </p>
+          <p class="footer-company-name"> Make_Sense </p>
+        </div> 
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>Redes Sociales </span> 
+          </p>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            
+          </div>
+        </div>
+      </footer>
+ 
+<!-- <style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px; 
+  color: inherit;
+  }
+  a{
+      text-decoration: none;            
+  }
+  ul{
+      list-style-type: none;
+  }
+  .logo{
+    height: 2vw;
+    position: absolute;
+    top: 20px;
+  }
+
+
+  /*HEADER*/
+
+.header{
+  display: flex;
+  flex-direction: column;           
+}
+.header__nav{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ background-color: #0C3944;
+ width: 100%;
+ flex-wrap: wrap;
+ height: 8vh;
+} 
+.nav__logo{
+  margin: 1em;
+}
+.nav__logo img{
+  max-height: 2.5em;
+}
+.nav__menu{
+ margin: 1em;
+}
+.menu__ul{
+ display: flex;
+ flex-flow: row nowrap;
+ gap:1.2em
+}
+.menu__link{
+ font-size: 1rem;
+ color: #fff;
+}
+.menu__link:hover{
+  color: #B5C2C6;
+  opacity: .8;
+  transition: .3s;
+}
+.menu__link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu__link i{
+  margin: .5em;
+  font-size: .6rem;  
+}
+
+.header__hero{
+  height: 92vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero__title{
+  font-size: 5.625rem;
+  color: #0C3944;
+  margin-bottom: 1em;
+  line-height: 6.625rem;
+}
+.hero__title img{
+  height: 3.825rem;
+  width: 10.75rem;
+  margin-left: .5em;
+  margin-right: .75em;
+}
+.hero__text{
+  font-size: 1.9rem;
+  color: #0C3944;
+  line-height: 3.1rem;
+  max-width: 660px;
+}
+.hero__container{
+  /*margin: 1em;*/
+  max-width: 849px;
+  text-align: left;
+}
+/*FOOTER*/
+
+ 
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --white: #afafaf;
+  --red: #e31b23;
+  --bodyColor: #292a2b;
+  --borderFormEls: hsl(0, 0%, 10%);
+  --bgFormEls: hsl(0, 0%, 14%);
+  --bgFormElsFocus: hsl(0, 7%, 20%);
+}
+
+ 
+
+/* Remove native arrow on IE */
+select::-ms-expand {
+  display: none;
+}
+
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white);
+}
+textarea {
+  resize: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form h2 {
+  margin: 1.5rem;
+  color: #0C3944;
+  font-size: 40px;
+}
+
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+   
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+  height: 170px;
+}
+
+.my-form ::placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus  {
+  background: var(--bgFormElsFocus);
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02);
+}
+
+.my-form *:required,
+.my-form select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+}
+.my-form *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
+}
+.my-form *:disabled {
+  cursor: default;
+}
+
+
+/* FORM BTNS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ 
+
+.my-form .btn-grid {
+  font-size: 25px;
+  margin: 10px;
+  min-width: 100px;
+  min-height: 60px;
+  background-color: #76757ab2;
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(97, 70, 84, 0.5);
+}
+.btn-grid:active {
+  transform: scale(0.9);
+}
+
+ 
+
+.my-form button > * {
+    width: 100%;
+     margin-top: -20px;
+     border: none;    
+     border-radius: 7px;
+      color: rgb(8, 1, 1);
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     cursor: pointer;
+     transition: 0.3s ease;
+    }
+
+/* CUSTOM CHECKBOX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.my-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form input[type="checkbox"] + label::before,
+.my-form input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute;
+}
+
+.my-form input[type="checkbox"] + label::before {
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--white);
+}
+
+.my-form input[type="checkbox"]:checked + label::before {
+  background: var(--red);
+}
+
+.my-form input[type="checkbox"]:checked + label::after {
+  left: 7px;
+  top: 7px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg);
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  font-size: 1rem;
+  text-align: right;
+  backface-visibility: hidden;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer span {
+  color: var(--red);
+}
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 600px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+ 
+}
+
+@media screen and (min-width: 541px) {
+  .my-form input[type="checkbox"] + label::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .my-form input[type="checkbox"]:checked + label::after {
+    top: 3px;
+  }
+}
+ 
+ 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  
+  min-width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+
+.upload-options {
+  position: relative;
+  height: 75px;
+  background-color: cadetblue;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color ease-in-out 150ms;
+}
+.upload-options:hover {
+  background-color: #7fb1b3;
+}
+.upload-options input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+ 
+.upload-options label::after {
+  content: "Add el Logo";
+  font-family: "Material Icons";
+  font-size: 2.5rem;
+  color: #e6e6e6;
+  z-index: 0;
+ 
+}
+ 
+.js--image-preview {
+  height: 225px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url("");
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+ 
+ 
+i.material-icons {
+  transition: color 100ms ease-in-out;
+  font-size: 2.25em;
+  line-height: 55px;
+  color: white;
+  display: block;
+}
+
+.drop {
+  display: block;
+  position: absolute;
+  background: rgba(95, 158, 160, 0.2);
+  border-radius: 100%;
+  transform: scale(0);
+}
+
+.animate {
+  -webkit-animation: ripple 0.4s linear;
+          animation: ripple 0.4s linear;
+}
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+/*------------------------------bootstrap-navbar-css--------------------------------*/
+.navbar-logo{
+	padding: 15px;
+	color: #fff;
+}
+.navbar-mainbg{ 
+	background-color:#0C3944;
+	padding: 0px;
+}
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color:#0C3944;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#0C3944;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
+
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-end;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+        justify-content: flex-end;
+	}
+}
+
+
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}
+</style>
+
+<script>
+     function initImageUpload(box) {
+  let uploadField = box.querySelector('.image-upload');
+
+  uploadField.addEventListener('change', getFile);
+
+  function getFile(e){
+    let file = e.currentTarget.files[0];
+    checkType(file);
+  }
+  
+  function previewImage(file){
+    let thumb = box.querySelector('.js--image-preview'),
+        reader = new FileReader();
+
+    reader.onload = function() {
+      thumb.style.backgroundImage = 'url(' + reader.result + ')';
+    }
+    reader.readAsDataURL(file);
+    thumb.className += ' js--no-default';
+  }
+
+  function checkType(file){
+    let imageType = /image.*/;
+    if (!file.type.match(imageType)) {
+      throw 'Datei ist kein Bild';
+    } else if (!file){
+      throw 'Kein Bild gewählt';
+    } else {
+      previewImage(file);
+    }
+  }
+  
+}
+  
+  // initialize box-scope
+  var boxes = document.querySelectorAll('.box');
+  
+  for (let i = 0; i < boxes.length; i++) {
+    let box = boxes[i];
+    initDropEffect(box);
+    initImageUpload(box);
+  }
+  
+  
+  
+  /// drop-effect
+  function initDropEffect(box){
+    let area, drop, areaWidth, areaHeight, maxDistance, dropWidth, dropHeight, x, y;
+    
+    // get clickable area for drop effect
+    area = box.querySelector('.js--image-preview');
+    area.addEventListener('click', fireRipple);
+    
+    function fireRipple(e){
+      area = e.currentTarget
+      // create drop
+      if(!drop){
+        drop = document.createElement('span');
+        drop.className = 'drop';
+        this.appendChild(drop);
+      }
+      // reset animate class
+      drop.className = 'drop';
+      
+      // calculate dimensions of area (longest side)
+      areaWidth = getComputedStyle(this, null).getPropertyValue("width");
+      areaHeight = getComputedStyle(this, null).getPropertyValue("height");
+      maxDistance = Math.max(parseInt(areaWidth, 10), parseInt(areaHeight, 10));
+  
+      // set drop dimensions to fill area
+      drop.style.width = maxDistance + 'px';
+      drop.style.height = maxDistance + 'px';
+      
+      // calculate dimensions of drop
+      dropWidth = getComputedStyle(this, null).getPropertyValue("width");
+      dropHeight = getComputedStyle(this, null).getPropertyValue("height");
+      
+      // calculate relative coordinates of click
+      // logic: click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center
+      x = e.pageX - this.offsetLeft - (parseInt(dropWidth, 10)/2);
+      y = e.pageY - this.offsetTop - (parseInt(dropHeight, 10)/2) - 30;
+      
+      // position drop and animate
+      drop.style.top = y + 'px';
+      drop.style.left = x + 'px';
+      drop.className += ' animate';
+      e.stopPropagation();
+      
+    }
+  }
+</script> -->
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="../JS/Menu.js"></script> -->
+<script src="../JS/Registro.js"></script>
+</html>

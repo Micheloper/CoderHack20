@@ -1,0 +1,203 @@
+/*HERO*/
+
+.header__hero{
+  height: 92vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__hero img{
+  max-width: 40%;
+}
+.hero__title{
+  font-size: 5.625rem;
+  color: #0C3944;
+  margin-bottom: 1em;
+  line-height: 6.625rem;
+}
+.hero__title img{
+  height: 3.825rem;
+  width: 10.75rem;
+  margin-left: .5em;
+  margin-right: .75em;
+}
+.hero__text{
+  font-size: 1.9rem;
+  color: #0C3944;
+  line-height: 3.1rem;
+  max-width: 660px;
+}
+.hero__container{
+  /*margin: 1em;*/
+  max-width: 60%;
+  text-align: left;
+  padding-left: 8.4em;
+  padding-right: 8.4em;
+}
+
+/*MAIN*/
+.main__container{
+  background-color: #f3976b;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.main__container h3{
+  font-size: 4rem;
+  line-height: 7rem;
+  margin-bottom: 1em;
+}
+.main__container p{
+  font-size: 1.9rem;
+  line-height: 3.1rem;
+}
+.main__container img{
+  margin-top: 5em;
+}
+.main__text{
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__containerDos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  height: 100vh;
+}
+.containerDos__text{
+  text-align: center;
+}
+.containerDos__text i{
+  color: #E26165;
+  font-size: 2.5rem;
+  margin: 1em;
+}
+.containerDos__text h3{
+  color: #0C3944;
+  font-size: 5rem;
+  margin-bottom: .5em;
+}
+
+.main__img{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.main__botones{
+  display: flex;
+  flex-direction: row;
+ padding-bottom: 50px;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+}
+.botones__emprendedor{
+  background-color: #196C84;
+  margin: 10px;
+}
+.botones__emprendedor:hover{
+  background-color: #0C3944;
+  border-radius: 100px;
+  transition: .5s;
+}
+.botones__emprendedor a{
+  font-size: 2.5rem;
+  line-height: 5em;
+  color: #fff;
+}
+.botones__emprendedor a span{
+  font-size: 6rem;
+  line-height: 1em;
+  
+}
+.botones__ciudadano{
+  background-color: #70AF90; 
+  margin: 10px;
+}
+.botones__ciudadano:hover{
+  background-color: #F3976B;
+  border-radius: 100px;
+  transition: .5s;
+}
+.botones__ciudadano::before{
+  content: "";
+  font-size: 2.5rem;
+  line-height: 5em;
+  color: #fff;
+}
+.botones__ciudadano a{
+  font-size: 2.5rem;
+  line-height: 5em; 
+  color: #fff;
+}
+
+.botones__ciudadano a span{
+  font-size: 6rem;
+  line-height: 1em;
+}
+
+/*EMPRENDEDOR*/
+.emprendedor__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.emprendedor__container img{
+  height: 90vh;
+  width: 70%;
+  margin-left: -800px;
+  margin-bottom: -221px;
+}
+.emprendedor__text{
+  color: #0C3944;
+  max-width: 30%;
+  padding: 20px;
+}
+.emprendedor__text h3{
+  font-size: 2.5rem;
+  line-height: 1.9em;
+  margin-bottom: 1em;
+}
+.emprendedor__text p{
+  font-size: 1.2rem;
+  line-height: 1.9em;
+  margin-bottom: 1em;
+}
+.emprendedor__botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3em;
+}
+.emprendedor__botones a{
+  font-size: 1rem;
+  height: 2.5em;
+  width: 13em;
+  text-align: center;
+  border-radius: 1em;
+  margin: 0 auto;
+  padding: 0.625em 0;
+  color: #fff;
+  margin: 10px;
+}
+.boton__registro{
+  background-color: #70AF90;
+}
+.boton__registro:hover{
+  background-color: #474136;
+}
+.boton__iniciar{
+  background-color: #FABE3C;
+}
+.boton__iniciar:hover{
+  background-color: #474136;
+}
